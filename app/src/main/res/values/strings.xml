@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android Compose Structure</string>
+    <string name="welcome_message">Welcome to Compose Template</string>
+</resources>
