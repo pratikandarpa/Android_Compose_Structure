@@ -2,7 +2,6 @@ package com.composetemplate.di
 
 import com.composetemplate.BuildConfig
 import com.composetemplate.utility.Constants
-import com.hadiyarajesh.flower_retrofit.FlowerCallAdapterFactory
 import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
@@ -51,7 +50,6 @@ class NetworkModule {
             .baseUrl(Constants.API_BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(MoshiConverterFactory.create(moshi)) // Register Moshi as a JSON converter for serialization and deserialization of objects.
-            .addCallAdapterFactory(FlowerCallAdapterFactory.create()) // Register Flower as a response converter for supporting method return types other than Call<T>.
             .build()
     }
 }

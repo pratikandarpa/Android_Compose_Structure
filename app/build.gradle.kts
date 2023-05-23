@@ -61,7 +61,6 @@ object LibVersion {
     const val retrofitVersion = "2.9.0"
     const val moshiVersion = "1.14.0"
     const val coilVersion = "2.2.2"
-    const val flowerVersion = "3.1.0"
 }
 
 dependencies {
@@ -93,10 +92,6 @@ dependencies {
 
     implementation("io.coil-kt:coil-compose:${LibVersion.coilVersion}") {
         because("An image loading library for Android backed by Kotlin Coroutines")
-    }
-
-    implementation("io.github.hadiyarajesh.flower-retrofit:flower-retrofit:${LibVersion.flowerVersion}") {
-        because("Flower simplifies networking and database caching on Android/Multiplatform")
     }
 
     testImplementation("junit:junit:4.13.2")
